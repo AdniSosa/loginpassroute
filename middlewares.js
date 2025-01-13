@@ -14,8 +14,6 @@ const validarPalabraMiddleware = (req, res, next) => {
     }
   };
   
-  
-  
   const verificarSesionMiddleware = (req, res, next) => {
     if (req.session.palabraSecreta) {
       next();
