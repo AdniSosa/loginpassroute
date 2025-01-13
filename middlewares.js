@@ -1,5 +1,7 @@
-const bodyParser = require('body-parser');//-
-const session = require('express-session');//
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const validarPalabraMiddleware = (req, res, next) => {
     const palabraCorrecta = process.env.PALABRA_SECRETA || '';
